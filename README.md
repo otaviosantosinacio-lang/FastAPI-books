@@ -49,8 +49,9 @@ A simple FastAPI project to practice REST endpoints using an in-memory list of b
 
 3. Start the server:
 
-    
+    ```text
     uvicorn books:app --reload
+    ```
 	-Open
 
 		- API: http://127.0.0.1:8000

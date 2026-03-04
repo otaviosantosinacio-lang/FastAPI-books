@@ -75,4 +75,3 @@ A simple FastAPI project to practice REST endpoints using an in-memory list of b
 
 		-curl http://127.0.0.1:8000/books
         
-    ```

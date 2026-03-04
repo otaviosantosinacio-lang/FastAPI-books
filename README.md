@@ -20,26 +20,33 @@ A simple FastAPI project to practice REST endpoints using an in-memory list of b
 ---
 
 ## Project structure
+```text
 .
 ├── books.py
 ├── requirements.txt
 └── README.md
+```
 ---
 
 ## How to run
 
 1. Create and activate a virtual environment:
-	python3 -m venv .venv
+	```text
+    python3 -m venv .venv
 	source .venv/bin/activate
+    ```
 
 ---
 
 2. Install dependencies:
-	pip install -r requirements.txt
+	```text
+    pip install -r requirements.txt
+    ```
 
 ---
 
 3. Start the server:
+    ```text
     uvicorn books:app --reload
 	-Open	 
 		- API: http://127.0.0.1:8000
@@ -59,3 +66,4 @@ A simple FastAPI project to practice REST endpoints using an in-memory list of b
 
 	-Example
 		-curl http://127.0.0.1:8000/books
+    ```

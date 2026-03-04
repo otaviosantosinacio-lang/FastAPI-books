@@ -51,12 +51,16 @@ A simple FastAPI project to practice REST endpoints using an in-memory list of b
 
     ```text
     uvicorn books:app --reload
-	-Open	 
+	-Open
+
+        ```text
 		- API: http://127.0.0.1:8000
 		- Swagger UI: http://127.0.0.1:8000/docs
-
-	-Endpoints (examples)
-
+        ```
+	
+    -Endpoints (examples)
+        
+        ```text
 		-GET / → Welcome message
 
 		-GET /books → List all books
@@ -66,7 +70,11 @@ A simple FastAPI project to practice REST endpoints using an in-memory list of b
 		-GET /books/?category=science → Filter by category (query)
 
 		-GET /books/author/{book_author} → Filter by author
+        ```
 
 	-Example
+
+        ```text
 		-curl http://127.0.0.1:8000/books
+        ```
     ```

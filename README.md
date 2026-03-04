@@ -1,52 +1,63 @@
-PT - BR
-# FastAPI - Library (Books)
+# FastAPI - Books Library
 
-Projeto simples em FastAPI para treinar rotas (GET) usando uma lista em memória.
-
-## Requisitos
-- Python 3.10+ (recomendado)
-- pip
-
-## Como rodar
-
-### 1) Criar e ativar o ambiente virtual
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-
-### 2) Instalar dependências
-pip install -r requirements.txt
-
-### 3) Rodar o servidor
-uvicorn books:app --reload
-#Acesse
-API: http://127.0.0.1:8000
-Docs Swagger: http://127.0.0.1:8000/docs
+A simple FastAPI project to practice REST endpoints using an in-memory list of books.
 
 
-EN
+---
 
-# FastAPI - Library (Books)
+## Features
+- List all books
+- Get a book by title
+- Filter books by category (query param)
+- Filter books by author (path param)
 
-A simple FastAPI project to practice routes (GET) using an in-memory list of books.
+---
 
 ## Requirements
-- Python 3.10+ (recommended)
+- Python 3.10+
 - pip
 
-## How to run
+---
 
-### 1) Create and activate a virtual environment
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
+## Project structure
+```text
+.
+├── books.py
+├── requirements.txt
+└── README.md
 
-### 2) Install Dependencies
-pip install fastapi uvicorn
+---
 
-### 3) Start the server
-uvicorn books:app --reload
+##How to run
 
-#Open:
-API: http://127.0.0.1:8000
-Swagger Docs: http://127.0.0.1:8000/docs
+1. Create and activate a virtual environment:
+	python3 -m venv .venv
+	source .venv/bin/activate
+
+---
+
+2. Install dependencies:
+	pip install -r requirements.txt
+
+---
+
+3. Start the server:
+    uvicorn books:app --reload
+	-Open	 
+		- API: http://127.0.0.1:8000
+		- Swagger UI: http://127.0.0.1:8000/docs
+
+	-Endpoints (examples)
+
+		-GET / → Welcome message
+
+		-GET /books → List all books
+
+		-GET /books/{book_title} → Get a book by title
+
+		-GET /books/?category=science → Filter by category (query)
+
+		-GET /books/author/{book_author} → Filter by author
+
+	-Example
+		-curl http://127.0.0.1:8000/books

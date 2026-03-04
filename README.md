@@ -31,6 +31,7 @@ A simple FastAPI project to practice REST endpoints using an in-memory list of b
 ## How to run
 
 1. Create and activate a virtual environment:
+
 	```text
     python3 -m venv .venv
 	source .venv/bin/activate
@@ -39,6 +40,7 @@ A simple FastAPI project to practice REST endpoints using an in-memory list of b
 ---
 
 2. Install dependencies:
+
 	```text
     pip install -r requirements.txt
     ```
@@ -46,6 +48,7 @@ A simple FastAPI project to practice REST endpoints using an in-memory list of b
 ---
 
 3. Start the server:
+
     ```text
     uvicorn books:app --reload
 	-Open	 

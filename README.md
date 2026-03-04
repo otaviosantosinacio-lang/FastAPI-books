@@ -25,10 +25,10 @@ A simple FastAPI project to practice REST endpoints using an in-memory list of b
 ├── books.py
 ├── requirements.txt
 └── README.md
-'''
+
 ---
 
-##How to run
+## How to run
 
 1. Create and activate a virtual environment:
 	python3 -m venv .venv
